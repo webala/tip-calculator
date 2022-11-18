@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    overflow-y: hidden;
+}
+p {
+    font-size: 14px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: 100vh;
+    background: hsl(185, 41%, 84%);
+    padding: 10% 0 ;
+}
+
+.main div:first-child {
+    margin: 0 0 30px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: hsl(0, 0%, 100%);
+    padding: 40px 20px;
+    border-radius: 16px;
+    width: 50%;
+}
+
+.tips-container {
+    margin: 0 1rem;
+}
+
+.bill div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bill div img {
+    width: 10px;
+    margin: 0 2px;
+}
+
+.bill input {
+    border-radius: 5px;
+    border: 1px solid hsl(172, 67%, 45%);
+    height: 1.5rem;
+    font-size: 24px;   
+    padding: 2px;
+}
+
+.bill input:focus {
+    outline: none;
+}
+
+.buttons-container {
+    margin: 20px 0;
+}
+
+.buttons-container div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem;
+    margin: 5px 0;
+}
+
+.buttons-container div button {
+    height: 2rem;
+    background: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.buttons-container div button:last-child {
+    background:  hsl(0, 0%, 100%);
+    color: black;
+}
+
+.buttons-container div button:hover {
+    background:  hsl(172, 67%, 45%);
+    color: black;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: hsl(183, 100%, 15%);
+    padding: 10px;
+    border-radius: 8px;
+    width: 25%;
+    height: 70%;
+}
+
+.results-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.results-container button{
+    background: hsl(172, 67%, 45%);
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    padding: .3rem 0;
+}
+
+.total-amount-display, .tip-amount-display  {
+    color: hsl(172, 67%, 45%);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.results-title {
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

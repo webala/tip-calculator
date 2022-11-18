@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <img src="./assets/images/logo.svg" alt="" />
+      </div>
+
+      <div class="container">
+        <div class="tips-container">
+          <div class="bill">
+            <p>Bill</p>
+            <div>
+              <img src="./assets/images/icon-dollar.svg" alt="" />
+              <input id="bill-total" type="number" required/>
+            </div>
+          </div>
+          <div class="buttons-container">
+            <p>Select Tip %</p>
+            <div>
+              <button data-percentage="5" class="tip-amt">5%</button>
+              <button data-percentage="10" class="tip-amt">10%</button>
+              <button data-percentage="15" class="tip-amt">15%</button>
+              <button data-percentage="25" class="tip-amt">25%</button>
+              <button data-percentage="50" class="tip-amt">50%</button>
+              <button data-percentage="custom" class="tip-amt">Custom</button>
+            </div>
+          </div>
+          <div class="bill">
+            <p>Number of people</p>
+            <div>
+              <img src="./assets/images/icon-person.svg" alt="" />
+              <input id="persons-total" type="number" required/>
+            </div>
+          </div>
+        </div>
+        <div class="results-container">
+          <div>
+            <div class="results-title">
+              <p>Tip </p>
+              <sub>/person</sub>
+            </div>
+            <p class="tip-amount-display">0</p>
+          </div>
+          <div>
+            <div class="results-title">
+              <p>Total</p>
+            </div>
+            <p class="total-amount-display">0</p>
+          </div>
+          <div>
+            <button>Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
